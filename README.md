@@ -6,7 +6,8 @@ A Machine Learning web application built with **Flask**, where users can input b
 
 ##  Overview  
 The goal of this project is to help estimate the resale value of a bike based on historical data.  
-It combines a **scikit-learn pipeline** with a simple **Flask-based frontend** to provide instant predictions.  
+It combines a **scikit-learn pipeline** with a simple **Flask-based frontend** to provide instant predictions. 
+Try it live here: http://35.175.213.64:5000
 
 ---
 
