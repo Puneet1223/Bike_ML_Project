@@ -30,6 +30,8 @@ Bike_ML_Project/
 ├── requirements.txt # Project dependencies
 ├── templates/
 │ └── index.html # Frontend form
+├── assets/
+│ └── Screenshot.png # App Screenshot
 ├── venv/ # Virtual environment (ignored in Git)
 ├── pycache/ # Cache files (ignored in Git)
 └── README.md # Project documentation
