@@ -22,20 +22,6 @@ Try it live here: http://35.175.213.64:5000
 
 ##  Project Structure  
 ![App Screenshot](assets/screenshot2.png)
-Bike_ML_Project/
-│
-├── app.py # Flask application
-├── pipe1.pkl # Trained ML pipeline (pickled model)
-├── df1.pkl # Supporting data/model file
-├── requirements.txt # Project dependencies
-├── templates/
-│ └── index.html # Frontend form
-├── assets/
-│ └── Screenshot.png # App Screenshot
-├── venv/ # Virtual environment (ignored in Git)
-├── pycache/ # Cache files (ignored in Git)
-└── README.md # Project documentation
-
 ---
 
 ##  Tech Stack  
