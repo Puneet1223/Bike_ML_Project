@@ -21,7 +21,7 @@ Try it live here: http://35.175.213.64:5000
 ---
 
 ##  Project Structure  
-
+![App Screenshot](assets/screenshot2.png)
 Bike_ML_Project/
 │
 ├── app.py # Flask application
