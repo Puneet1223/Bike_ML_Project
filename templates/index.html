@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bike Price Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 400px;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px;
+            width: 100%;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        h3 {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Enter Bike Details</h2>
+        <form action="/predict" method="post">
+            <label>Model Year:</label>
+            <input type="text" name="model_year" required>
+
+            <label>Kms Driven:</label>
+            <input type="text" name="kms_driven" required>
+
+            <label>Owner:</label>
+            <select name="owner" required>
+                {% for o in owners %}
+                    <option value="{{ o }}">{{ o }}</option>
+                {% endfor %}
+            </select>
+
+            <label>Location:</label>
+            <select name="location" required>
+                {% for loc in locations %}
+                    <option value="{{ loc }}">{{ loc }}</option>
+                {% endfor %}
+            </select>
+
+            <label>Mileage:</label>
+            <input type="text" name="mileage" required>
+
+            <label>Power:</label>
+            <input type="text" name="power" required>
+
+            <label>CC:</label>
+            <input type="text" name="cc" required>
+
+            <label>Brand:</label>
+            <select name="Brand" required>
+                {% for b in brands %}
+                    <option value="{{ b }}">{{ b }}</option>
+                {% endfor %}
+            </select>
+
+            <label>Bike Age:</label>
+            <input type="text" name="bike__age" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction_text %}
+            <h3>{{ prediction_text }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
