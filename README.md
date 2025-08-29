@@ -53,7 +53,7 @@ Bike_ML_Project/
 ---
 
 ##  Screenshot  
-![App Screenshot](assets/screenshot.png)
+![App Screenshot](assets/Screenshot.png)
 
 
 ---
